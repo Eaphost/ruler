@@ -10,20 +10,28 @@ IP-CIDR6,2408:871a:2100:1a:0:ff:b089:349b/128,no-resolve
 IP-CIDR6,2408:871a:2100:1c:0:ff:b047:3cdf,no-resolve
 IP-CIDR6,2408:8719:64:9a::275b:b626,no-resolve
 IP-CIDR6,2408:8726:3001:893:0:ff:b09f:cbfe,no-resolve
+IP-CIDR6,2408:8720:800:14::7b06:741f,no-resolve
+IP-CIDR6,2408:8722:b000:1::db9b:9623,no-resolve
 
 
 
 
 
 
-IP-CIDR,2408:871a:2100:14:0:ff:b05e:adf/128,no-resolve
-IP-CIDR,2409:8c70:3a91:174:0:ff:b0fb:d507/128,no-resolve
+
+IP-CIDR,2408:874c:0:200::7499:8022,no-resolve
+IP-CIDR,2408:871a:2100:1b:0:ff:b034:38f,no-resolve
+IP-CIDR,2400:da00::dbf:0:6666,no-resolve
+IP-CIDR,2408:871a:2100:1a:0:ff:b089:349b,no-resolve
+IP-CIDR,2408:871a:2100:14:0:ff:b05e:adf,no-resolve
+IP-CIDR,2409:8c70:3a91:174:0:ff:b0fb:d507,no-resolve
 IP-CIDR,2408:8770:0:634:0:ff:b086:e126/128,no-resolve
 IP-CIDR,2408:871a:2100:1a:0:ff:b089:349b/128,no-resolve
 IP-CIDR,2408:871a:2100:1c:0:ff:b047:3cdf,no-resolve
 IP-CIDR,2408:8719:64:9a::275b:b626,no-resolve
-IP-CIDR,2408:874c:0:200::7499:8022,no-resolve
-IP-CIDR,2408:871a:2100:1b:0:ff:b034:38f,no-resolve
+IP-CIDR,2408:8726:3001:893:0:ff:b09f:cbfe,no-resolve
+IP-CIDR,2408:8720:800:14::7b06:741f,no-resolve
+IP-CIDR,2408:8722:b000:1::db9b:9623,no-resolve
 
 
 
