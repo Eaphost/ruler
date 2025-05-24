@@ -5,6 +5,7 @@
 IP-CIDR6,2400:da00::dbf:0:6666,no-resolve
 IP-CIDR6,2408:871a:2100:1a:0:ff:b089:349b,no-resolve
 IP-CIDR6,2408:871a:2100:14:0:ff:b05e:adf,no-resolve
+IP-CIDR6,2409:8c70:3a91:174:0:ff:b0fb:d507,no-resolve
 DOMAIN-SUFFIX,a.youdao.com
 DOMAIN-SUFFIX,adgeo.corp.163.com
 DOMAIN-SUFFIX,analytics.126.net
