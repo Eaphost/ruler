@@ -15,9 +15,9 @@ IP-CIDR6,2408:8726:3001:2f2:0:ff:b0ee:1cc6/128,no-resolve
 IP-CIDR6,2408:874c:0:200::7499:8024/128,no-resolve
 IP-CIDR6,2408:8726:3001:72f:0:ff:b057:9bf/128,no-resolve
 IP-CIDR6,2408:8772:0:15d9:0:ff:b033:bb1/128,no-resolve
+IP-CIDR6,2408:8770:0:69f:0:ff:b084:d407/128,no-resolve
 
-
-
+IP-CIDR,2408:8770:0:69f:0:ff:b084:d407/128,no-resolve
 IP-CIDR,2408:8726:3001:72f:0:ff:b057:9bf/128,no-resolve
 IP-CIDR,2408:874c:0:200::7499:8024/128,no-resolve
 IP-CIDR,2408:874c:0:200::7499:8022,no-resolve
