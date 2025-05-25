@@ -16,24 +16,19 @@ IP-CIDR6,2408:874c:0:200::7499:8024/128,no-resolve
 IP-CIDR6,2408:8726:3001:72f:0:ff:b057:9bf/128,no-resolve
 IP-CIDR6,2408:8772:0:15d9:0:ff:b033:bb1/128,no-resolve
 IP-CIDR6,2408:8770:0:69f:0:ff:b084:d407/128,no-resolve
+IP-CIDR6,2408:8720:800:14::7b06:7423/128,no-resolve
+IP-CIDR6,2408:8678:be00:7::2a3f:3223/128,no-resolve
+IP-CIDR6,2408:870c:1020:1::7041:cb23/128,no-resolve
+IP-CIDR6,2408:870c:1040:1::d35f:2223/128,no-resolve
+IP-CIDR6,2408:8719:64:9a::275b:b623/128,no-resolve
+IP-CIDR6,2408:8719:5f01::7b82:7b23/128,no-resolve
+IP-CIDR6,2408:871a:b800:11::7916:ef23/128,no-resolve
+IP-CIDR6,2408:8719:3000:b::1bdd:2623/128,no-resolve
+IP-CIDR6,2408:8719:64:17::77bc:b023/128,no-resolve
+IP-CIDR6,2408:8610:3b10:1200::7d26:426/128,no-resolve
+IP-CIDR6,2408:8722:1040:86::3da3:926/128,no-resolve
+IP-CIDR6,2409:8c44:b00:ff2a::6f07:bd26/128,no-resolve
 
-IP-CIDR,2408:8770:0:69f:0:ff:b084:d407/128,no-resolve
-IP-CIDR,2408:8726:3001:72f:0:ff:b057:9bf/128,no-resolve
-IP-CIDR,2408:874c:0:200::7499:8024/128,no-resolve
-IP-CIDR,2408:874c:0:200::7499:8022,no-resolve
-IP-CIDR,2408:871a:2100:1b:0:ff:b034:38f,no-resolve
-IP-CIDR,2400:da00::dbf:0:6666,no-resolve
-IP-CIDR,2408:871a:2100:1a:0:ff:b089:349b,no-resolve
-IP-CIDR,2408:871a:2100:14:0:ff:b05e:adf,no-resolve
-IP-CIDR,2409:8c70:3a91:174:0:ff:b0fb:d507,no-resolve
-IP-CIDR,2408:8770:0:634:0:ff:b086:e126/128,no-resolve
-IP-CIDR,2408:871a:2100:1c:0:ff:b047:3cdf,no-resolve
-IP-CIDR,2408:8719:64:9a::275b:b626,no-resolve
-IP-CIDR,2408:8726:3001:893:0:ff:b09f:cbfe/128,no-resolve
-IP-CIDR,2408:8720:800:14::7b06:741f,no-resolve
-IP-CIDR,2408:8722:b000:1::db9b:9623,no-resolve
-IP-CIDR,2408:8726:3001:2f2:0:ff:b0ee:1cc6/128,no-resolve
-IP-CIDR,2408:8772:0:15d9:0:ff:b033:bb1/128,no-resolve
 
 
 
