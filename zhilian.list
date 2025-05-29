@@ -7,6 +7,7 @@ DOMAIN-SUFFIX,lanzov.com
 DOMAIN-SUFFIX,hao123.com
 
 
+
 # IP段匹配
 IP-CIDR,219.146.1.66/32,no-resolve
 
@@ -29,7 +30,7 @@ DOMAIN-SUFFIX,mac78.com
 DOMAIN-SUFFIX,ip138.com
 DOMAIN-SUFFIX,vvword.com
 DOMAIN-SUFFIX,apple.com
-
+DOMAIN-SUFFIX,gateway.icloud.com
 # 360
 DOMAIN-SUFFIX,360.com
 DOMAIN-SUFFIX,360kuai.com
