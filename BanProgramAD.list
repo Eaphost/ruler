@@ -1,4 +1,7 @@
 # 百度网盘ipv6
+IP-CIDR6,42.186.110.59,no-resolve
+IP-CIDR6,42.186.241.52,no-resolve
+IP-CIDR6,42.186.249.204,no-resolve
 IP-CIDR6,2408:874c:0:200::7499:8022,no-resolve
 IP-CIDR6,2408:871a:2100:1b:0:ff:b034:38f,no-resolve
 IP-CIDR6,2400:da00::dbf:0:6666,no-resolve
