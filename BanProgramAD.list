@@ -3,6 +3,9 @@ IP-CIDR6,42.186.110.59,no-resolve
 IP-CIDR6,42.186.241.52,no-resolve
 IP-CIDR6,42.186.249.204,no-resolve
 DOMAIN-SUFFIX,store-api.mumu.163.com
+DOMAIN-SUFFIX,ic.adobe.io
+DOMAIN-REGEX,\\w{10}.adobe.io
+DOMAIN-REGEX,\\w{10}.adobestats.io
 
 
 
