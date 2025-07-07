@@ -6,7 +6,7 @@ DOMAIN-SUFFIX,store-api.mumu.163.com
 DOMAIN-SUFFIX,ic.adobe.io
 DOMAIN-REGEX,\\w{10}.adobe.io
 DOMAIN-REGEX,\\w{10}.adobestats.io
-
+DOMAIN-SUFFIX,cc-api-data.adobe.io
 
 
 
