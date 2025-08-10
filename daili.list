@@ -8,6 +8,7 @@ DOMAIN-SUFFIX,docker.kfcvme50.tech
 DOMAIN-SUFFIX,hub.docker.com
 DOMAIN-SUFFIX,uaa.com
 DOMAIN-SUFFIX,cdn.uameta.ai
+DOMAIN-SUFFIX,bt.sb
 # 域名关键字匹配
 DOMAIN-KEYWORD,1e100
 
