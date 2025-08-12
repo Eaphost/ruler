@@ -10,6 +10,7 @@ proxy-groups:
       - 日本节点
       - 美国节点
       - 韩国节点
+      - 其他节点
       - 手动切换
       - DIRECT
   - name: 手动切换
@@ -34,6 +35,7 @@ proxy-groups:
       - 日本节点
       - 美国节点
       - 韩国节点
+      - 其他节点
       - 手动切换
       - DIRECT
   - name: OpenAi
@@ -48,6 +50,7 @@ proxy-groups:
       - 台湾节点
       - 日本节点
       - 韩国节点
+      - 其他节点
       - 手动切换
       - DIRECT
   - name: 油管视频
@@ -62,6 +65,7 @@ proxy-groups:
       - 日本节点
       - 美国节点
       - 韩国节点
+      - 其他节点
       - 手动切换
       - DIRECT
   - name: 奈飞视频
@@ -77,6 +81,7 @@ proxy-groups:
       - 日本节点
       - 美国节点
       - 韩国节点
+      - 其他节点
       - 手动切换
       - DIRECT
   - name: 巴哈姆特
@@ -106,6 +111,7 @@ proxy-groups:
       - 狮城节点
       - 美国节点
       - 韩国节点
+      - 其他节点
       - 手动切换
       - DIRECT
   - name: 国内媒体
@@ -129,6 +135,7 @@ proxy-groups:
       - 狮城节点
       - 日本节点
       - 韩国节点
+      - 其他节点
       - 手动切换
       - DIRECT
   - name: 微软Bing
@@ -143,6 +150,7 @@ proxy-groups:
       - 狮城节点
       - 日本节点
       - 韩国节点
+      - 其他节点
       - 手动切换
   - name: 微软云盘
     icon: https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/OneDrive.png
@@ -156,6 +164,7 @@ proxy-groups:
       - 狮城节点
       - 日本节点
       - 韩国节点
+      - 其他节点
       - 手动切换
   - name: 微软服务
     icon: https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Microsoft.png
@@ -169,6 +178,7 @@ proxy-groups:
       - 狮城节点
       - 日本节点
       - 韩国节点
+      - 其他节点
       - 手动切换
   - name: 苹果服务
     icon: https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Apple.png
@@ -285,6 +295,11 @@ proxy-groups:
     include-all: true
     filter: (?i)NF|奈飞|解锁|Netflix|NETFLIX|Media
     type: select
+  - name: 其他节点
+    icon: https://git.imee.me/https://github.com/Koolson/Qure/raw/master/IconSet/Color/European_Union.png
+    include-all: true
+    filter: (?i)奥|比|保|克罗地亚|塞|捷|丹|爱沙|芬|法|德|希|匈|爱尔|意|拉|立|卢|马其它|荷|波|葡|罗|斯洛伐|斯洛文|西|瑞|英
+    type: select
   - name: GLOBAL
     icon: https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Global.png
     include-all: true
@@ -319,6 +334,7 @@ proxy-groups:
       - 狮城节点
       - 韩国节点
       - 奈飞节点
+      - 其他节点
 
 rule-providers:
   LocalAreaNetwork:
