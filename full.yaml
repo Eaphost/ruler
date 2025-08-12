@@ -337,16 +337,9 @@ proxy-groups:
       - 其他节点
 
 rule-providers:
-  LocalAreaNetwork:
-    url: https://testingcf.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/LocalAreaNetwork.list
-    path: ./ruleset/LocalAreaNetwork.list
-    behavior: classical
-    interval: 86400
-    format: text
-    type: http
-  UnBan:
-    url: https://testingcf.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/UnBan.list
-    path: ./ruleset/UnBan.list
+  zhilian:
+    url: https://raw.githubusercontent.com/Eaphost/ruler/refs/heads/main/zhilian.list
+    path: ./ruleset/zhilian.list
     behavior: classical
     interval: 86400
     format: text
@@ -358,9 +351,16 @@ rule-providers:
     interval: 86400
     format: text
     type: http
-  zhilian:
-    url: https://raw.githubusercontent.com/Eaphost/ruler/refs/heads/main/zhilian.list
-    path: ./ruleset/zhilian.list
+  LocalAreaNetwork:
+    url: https://testingcf.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/LocalAreaNetwork.list
+    path: ./ruleset/LocalAreaNetwork.list
+    behavior: classical
+    interval: 86400
+    format: text
+    type: http
+  UnBan:
+    url: https://testingcf.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/UnBan.list
+    path: ./ruleset/UnBan.list
     behavior: classical
     interval: 86400
     format: text
