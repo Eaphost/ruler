@@ -40,13 +40,13 @@ proxy-groups:
     icon: https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Bot.png
     type: select
     proxies:
+      - 美国节点
       - 节点选择
       - 自动选择
       - 狮城节点
       - 香港节点
       - 台湾节点
       - 日本节点
-      - 美国节点
       - 韩国节点
       - 手动切换
       - DIRECT
@@ -54,10 +54,10 @@ proxy-groups:
     icon: https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/YouTube.png
     type: select
     proxies:
+      - 香港节点
       - 节点选择
       - 自动选择
       - 狮城节点
-      - 香港节点
       - 台湾节点
       - 日本节点
       - 美国节点
@@ -98,12 +98,12 @@ proxy-groups:
     icon: https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/ForeignMedia.png
     type: select
     proxies:
+      - 日本节点
       - 节点选择
       - 自动选择
       - 香港节点
       - 台湾节点
       - 狮城节点
-      - 日本节点
       - 美国节点
       - 韩国节点
       - 手动切换
@@ -122,15 +122,15 @@ proxy-groups:
     icon: https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Google_Search.png
     type: select
     proxies:
-      - DIRECT
-      - 节点选择
       - 美国节点
+      - 节点选择
       - 香港节点
       - 台湾节点
       - 狮城节点
       - 日本节点
       - 韩国节点
       - 手动切换
+      - DIRECT
   - name: 微软Bing
     icon: https://testingcf.jsdelivr.net/gh/shindgewongxj/WHATSINStash@master/icon/bing.png
     type: select
@@ -161,8 +161,8 @@ proxy-groups:
     icon: https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Microsoft.png
     type: select
     proxies:
-      - 节点选择
       - DIRECT
+      - 节点选择
       - 美国节点
       - 香港节点
       - 台湾节点
@@ -216,21 +216,21 @@ proxy-groups:
     icon: https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/AdBlack.png
     type: select
     proxies:
-      - REJECT
       - DIRECT
+      - REJECT
   - name: 应用净化
     icon: https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Hijacking.png
     type: select
     proxies:
-      - REJECT
       - DIRECT
+      - REJECT
   - name: 漏网之鱼
     icon: https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Final.png
     type: select
     proxies:
-      - 节点选择
       - 自动选择
       - DIRECT
+      - 节点选择
       - 香港节点
       - 台湾节点
       - 狮城节点
