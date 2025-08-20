@@ -9,6 +9,7 @@ DOMAIN-SUFFIX,hub.docker.com
 DOMAIN-SUFFIX,uaa.com
 DOMAIN-SUFFIX,cdn.uameta.ai
 DOMAIN-SUFFIX,bt.sb
+DOMAIN-SUFFIX,wallhaven.cc
 # 域名关键字匹配
 DOMAIN-KEYWORD,1e100
 
