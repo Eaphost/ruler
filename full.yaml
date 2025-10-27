@@ -376,7 +376,7 @@ rule-providers:
   ADguardhome:
     url: https://raw.githubusercontent.com/TG-Twilight/AWAvenue-Ads-Rule/main/Filters/AWAvenue-Ads-Rule-QuantumultX.list
     path: ./ruleset/AWAvenue-Ads-Rule-QuantumultX.list
-    behavior: domain
+    behavior: classical
     interval: 86400
     format: text
     输入: http
