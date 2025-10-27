@@ -374,11 +374,11 @@ rule-providers:
     format: text
     输入: http
   ADguardhome:
-    url: https://raw.githubusercontent.com/TG-Twilight/AWAvenue-Ads-Rule/main//Filters/AWAvenue-Ads-Rule-Clash.yaml
-    path: ./ruleset/AWAvenue-Ads-Rule-Clash.yaml
+    url: https://raw.githubusercontent.com/TG-Twilight/AWAvenue-Ads-Rule/main/Filters/AWAvenue-Ads-Rule-QuantumultX.list
+    path: ./ruleset/AWAvenue-Ads-Rule-QuantumultX.list
     behavior: domain
     interval: 86400
-    format: yaml
+    format: text
     输入: http
   BanProgramAD:
     url: https://raw.githubusercontent.com/Eaphost/ruler/refs/heads/main/BanProgramAD.list
