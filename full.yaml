@@ -300,11 +300,11 @@ proxy-groups:
     icon: https://git.imee.me/https://github.com/Koolson/Qure/raw/master/IconSet/Color/European_Union.png
     include-all: true
     filter: (?i)奥|澳|比|保|迪拜|柬|泰|土|克罗地亚|塞|捷|丹|爱沙|芬|法|德|希|匈|爱尔|意|拉|立|卢|马其它|荷|波|葡|罗|斯洛伐|斯洛文|西|瑞|英
-    type: select
+    输入: select
   - name: GLOBAL
     icon: https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Global.png
     include-all: true
-    type: select
+    输入: select
     proxies:
       - 节点选择
       - 手动切换
@@ -344,42 +344,49 @@ rule-providers:
     behavior: classical
     interval: 86400
     format: text
-    type: http
+    输入: http
   daili:
     url: https://raw.githubusercontent.com/Eaphost/ruler/refs/heads/main/daili.list
     path: ./ruleset/daili.list
     behavior: classical
     interval: 86400
     format: text
-    type: http
+    输入: http
   LocalAreaNetwork:
     url: https://testingcf.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/LocalAreaNetwork.list
     path: ./ruleset/LocalAreaNetwork.list
     behavior: classical
     interval: 86400
     format: text
-    type: http
+    输入: http
   UnBan:
     url: https://testingcf.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/UnBan.list
     path: ./ruleset/UnBan.list
     behavior: classical
     interval: 86400
     format: text
-    type: http
+    输入: http
   BanAD:
     url: https://testingcf.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/BanAD.list
     path: ./ruleset/BanAD.list
     behavior: classical
     interval: 86400
     format: text
-    type: http
+    输入: http
+  ADguardhome:
+    url: https://raw.githubusercontent.com/TG-Twilight/AWAvenue-Ads-Rule/main//Filters/AWAvenue-Ads-Rule-Clash.yaml
+    path: ./ruleset/AWAvenue-Ads-Rule-Clash.yaml
+    behavior: domain
+    interval: 86400
+    format: yaml
+    输入: http
   BanProgramAD:
     url: https://raw.githubusercontent.com/Eaphost/ruler/refs/heads/main/BanProgramAD.list
     path: ./ruleset/BanProgramAD.list
     behavior: classical
     interval: 86400
     format: text
-    type: http
+    输入: http
   GoogleFCM:
     url: https://testingcf.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/Ruleset/GoogleFCM.list
     path: ./ruleset/GoogleFCM.list
@@ -569,6 +576,7 @@ rules:
   - "RULE-SET,zhilian,全球直连"
   - "RULE-SET,daili,节点选择"
   - "RULE-SET,BanAD,广告拦截"
+  - "RULE-SET,ADguardhome,广告拦截"
   - "RULE-SET,BanProgramAD,应用净化"
   - "RULE-SET,GoogleFCM,谷歌FCM"
   - "RULE-SET,GoogleCN,全球直连"
