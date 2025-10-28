@@ -128,13 +128,13 @@ BehaviorIP: &BehaviorIP {type: http, behavior: ipcidr, format: mrs, interval: 86
 # 规则提供者
 rule-providers: 
   # 域名规则
-  Tracking:       {<<: *BehaviorDN， url: https://github.com/666OS/rules/raw/release/mihomo/domain/Tracking.mrs}
-  广告:    {<<: *BehaviorDN， url: https://github.com/666OS/rules/raw/release/mihomo/domain/Advertising.mrs} 
-  Direct:         {<<: *BehaviorDN， url: https://github.com/666OS/rules/raw/release/mihomo/domain/Direct.mrs}
-  私有:        {<<: *BehaviorDN， url: https://github.com/666OS/rules/raw/release/mihomo/domain/Private.mrs}
-  下载:       {<<: *BehaviorDN， url: https://github.com/666OS/rules/raw/release/mihomo/domain/Download.mrs}
-  ConnCheck:      {<<: *BehaviorDN， url: https://github.com/666OS/rules/raw/release/mihomo/domain/ConnCheck.mrs}
-  Speedtest:      {<<: *BehaviorDN， url: https://github.com/666OS/rules/raw/release/mihomo/domain/Speedtest.mrs}
+  Tracking:       {<<: *BehaviorDN, url: https://github.com/666OS/rules/raw/release/mihomo/domain/Tracking.mrs}
+  Advertising:    {<<: *BehaviorDN, url: https://github.com/666OS/rules/raw/release/mihomo/domain/Advertising.mrs} 
+  Direct:         {<<: *BehaviorDN, url: https://github.com/666OS/rules/raw/release/mihomo/domain/Direct.mrs}
+  Private:        {<<: *BehaviorDN, url: https://github.com/666OS/rules/raw/release/mihomo/domain/Private.mrs}
+  Download:       {<<: *BehaviorDN, url: https://github.com/666OS/rules/raw/release/mihomo/domain/Download.mrs}
+  ConnCheck:      {<<: *BehaviorDN, url: https://github.com/666OS/rules/raw/release/mihomo/domain/ConnCheck.mrs}
+  Speedtest:      {<<: *BehaviorDN, url: https://github.com/666OS/rules/raw/release/mihomo/domain/Speedtest.mrs}
   AI:             {<<: *BehaviorDN, url: https://github.com/666OS/rules/raw/release/mihomo/domain/AI.mrs}  
   Telegram:       {<<: *BehaviorDN, url: https://github.com/666OS/rules/raw/release/mihomo/domain/Telegram.mrs}
   SocialMedia:    {<<: *BehaviorDN, url: https://github.com/666OS/rules/raw/release/mihomo/domain/SocialMedia.mrs}
