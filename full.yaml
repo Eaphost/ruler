@@ -352,6 +352,12 @@ rule-providers:
     interval: 86400
     format: text
     type: http
+  adobe-block:
+    url: "https://raw.githubusercontent.com/ignaciocastro/a-dove-is-dumb/main/clash.yaml"
+    path: ./ruleset/adobe.yaml
+    behavior: classical
+    interval: 43200
+    type: http
   LocalAreaNetwork:
     url: https://testingcf.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/LocalAreaNetwork.list
     path: ./ruleset/LocalAreaNetwork.list
@@ -575,6 +581,7 @@ rules:
   - "RULE-SET,UnBan,全球直连"
   - "RULE-SET,zhilian,全球直连"
   - "RULE-SET,daili,节点选择"
+  - "RULE-SET,adobe-block,应用净化"
   - "RULE-SET,BanAD,广告拦截"
   - "RULE-SET,ADguardhome,广告拦截"
   - "RULE-SET,BanProgramAD,应用净化"
