@@ -105,6 +105,7 @@ rules:
 
   # 域名规则
   - RULE-SET,zhi,直接连接
+  - RULE-SET,proxylite,国外流量
   - RULE-SET,Private,直接连接
   - RULE-SET,Direct,直接连接
   - RULE-SET,XPTV,直接连接
@@ -151,8 +152,10 @@ BehaviorIP: &BehaviorIP {type: http, behavior: ipcidr, format: mrs, interval: 86
 # 规则提供者
 rule-providers: 
   # 域名规则
-  Tracking:       {<<: *BehaviorDN, url: https://github.com/666OS/rules/raw/release/mihomo/domain/Tracking.mrs}
   AD:             {<<: *BehaviorDN, url: https://github.com/Eaphost/mihomo-rule/raw/refs/heads/main/Ad_Mihomo.mrs} 
+  zhi:            {<<: *BehaviorDN, url: https://github.com/Eaphost/mihomo-rule/raw/refs/heads/main/Direct_Mihomo.mrs} 
+  proxylite:      {<<: *BehaviorDN, url: https://raw.githubusercontent.com/Eaphost/mihomo-rule/refs/heads/main/Proxy_Mihomo.mrs}
+  Tracking:       {<<: *BehaviorDN, url: https://github.com/666OS/rules/raw/release/mihomo/domain/Tracking.mrs}
   Advertising:    {<<: *BehaviorDN, url: https://git.imee.me/https://github.com/666OS/rules/raw/release/mihomo/domain/Advertising.mrs} 
   Direct:         {<<: *BehaviorDN, url: https://git.imee.me/https://github.com/666OS/rules/raw/release/mihomo/domain/Direct.mrs}
   Private:        {<<: *BehaviorDN, url: https://git.imee.me/https://github.com/666OS/rules/raw/release/mihomo/domain/Private.mrs}
@@ -174,7 +177,6 @@ rule-providers:
   Facebook:       {<<: *BehaviorDN, url: https://git.imee.me/https://github.com/666OS/rules/raw/release/mihomo/domain/Facebook.mrs}
   Proxy:          {<<: *BehaviorDN, url: https://git.imee.me/https://github.com/666OS/rules/raw/release/mihomo/domain/Proxy.mrs}
   China:          {<<: *BehaviorDN, url: https://github.com/666OS/rules/raw/release/mihomo/domain/China.mrs}
-  zhi:            {<<: *BehaviorDN, url: https://github.com/Eaphost/mihomo-rule/raw/refs/heads/main/Direct_Mihomo.mrs} 
   # IP规则
   AdvertisingIP:  {<<: *BehaviorIP, url: https://git.imee.me/https://github.com/666OS/rules/raw/release/mihomo/ip/Advertising.mrs}
   PrivateIP:      {<<: *BehaviorIP, url: https://git.imee.me/https://github.com/666OS/rules/raw/release/mihomo/ip/Private.mrs}
