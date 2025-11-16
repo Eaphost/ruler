@@ -21,8 +21,6 @@
 ||wup.browser.qq.com^
 ||btrace.qq.com^
 ||bugly.qq.com^
-||beacon.cdn.qq.com^
-||cgi.connect.qq.com^
 ||crashsight.qq.com^
 ||d3g.qq.com^
 ||file.daihuo.qq.com^
