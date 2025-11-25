@@ -153,7 +153,7 @@ BehaviorIP: &BehaviorIP {type: http, behavior: ipcidr, format: mrs, interval: 86
 rule-providers: 
   # 域名规则
   AD:             {<<: *BehaviorDN, url: https://raw.githubusercontent.com/Eaphost/mihomo-rule/refs/heads/main/Ad_Mihomo.mrs} 
-  zhi:            {<<: *BehaviorDN, url: https://raw.githubusercontent.com/Eaphost/mihomo-rule/raw/refs/heads/main/Direct_Mihomo.mrs} 
+  zhi:            {<<: *BehaviorDN, url: https://raw.githubusercontent.com/Eaphost/mihomo-rule/refs/heads/main/Direct_Mihomo.mrs} 
   proxylite:      {<<: *BehaviorDN, url: https://raw.githubusercontent.com/Eaphost/mihomo-rule/refs/heads/main/Proxy_Mihomo.mrs}
   Tracking:       {<<: *BehaviorDN, url: https://git.imee.me/https://github.com/666OS/rules/raw/release/mihomo/domain/Tracking.mrs}
   Advertising:    {<<: *BehaviorDN, url: https://git.imee.me/https://github.com/666OS/rules/raw/release/mihomo/domain/Advertising.mrs} 
