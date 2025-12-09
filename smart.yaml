@@ -10,9 +10,9 @@
 # >>=====================================<<
 # 名称: OneSmartPro 一键智能代理
 # 地址: https://github.com/666OS/YYDS
-# 版本: v1.2.6
+# 版本: v1.3.0
 # 作者: YYDS666
-# 更新: 2025 年 11 月 11 日
+# 更新: 2025 年 12 月 6 日
 # 频道: https://t.me/Pinched666
 # 描述: 基于Mihomo的智能代理配置，提供四层架构智能路由和全场景规则集
 #       集成Smart算法自动选择最优节点，支持故障转移和负载均衡
@@ -23,9 +23,9 @@
 BaseProvider: &BaseProvider {type: http, interval: 86400, proxy: DIRECT, health-check: {enable: true, url: 'https://www.google.com/generate_204', interval: 300}, filter: '^(?!.*(群|邀请|返利|循环|官网|客服|网站|网址|获取|订阅|流量|到期|机场|下次|版本|官址|备用|过期|已用|联系|邮箱|工单|贩卖|通知|倒卖|防止|国内|地址|频道|无法|说明|使用|提示|特别|访问|支持|教程|关注|更新|作者|加入|USE|USED|TOTAL|EXPIRE|EMAIL|Panel|Channel|Author))'}
 
 # 策略组类型模板 - 定义不同的策略组基础配置
-BaseFB: &BaseFB       {type: fallback, interval: 200, lazy: true, url: 'http://www.google.com/generate_204'}
-BaseLB: &BaseLB       {type: load-balance, interval: 200, lazy: true, url: 'http://www.google.com/generate_204'}
-BaseSmart: &BaseSmart {type: smart, interval: 200, lazy: true, url: 'http://www.google.com/generate_204', hidden: true, uselightgbm: true}
+BaseFB: &BaseFB       {type: fallback, interval: 200, lazy: true, url: 'https://www.google.com/generate_204'}
+BaseLB: &BaseLB       {type: load-balance, interval: 200, lazy: true, url: 'https://www.google.com/generate_204'}
+BaseSmart: &BaseSmart {type: smart, interval: 200, lazy: true, url: 'https://www.google.com/generate_204', hidden: true, uselightgbm: true}
 
 # 节点筛选正则表达式 - 基于地理位置和关键词过滤
 FilterHK: &FilterHK '^(?=.*(?i)(港|🇭🇰|HK|Hong|HKG))(?!.*(排除1|排除2|5x)).*$'
@@ -55,6 +55,8 @@ proxy-providers:
   备用服务商: {<<: *BaseProvider, url: '备用订阅源地址', override: {additional-prefix: '[备] '}}
   # 落地订阅源 - 落地服务连接，使用时请修改
   落地服务商: {<<: *BaseProvider, url: '落地订阅源地址', override: {additional-prefix: '[中] ', dialer-proxy: 中转服务}}
+
+
 # ==================== 代理策略组 ====================
 proxy-groups:
   # 应用策略层 - Select手动选择，支持多场景应用优化，使用时默认，也可修改
@@ -102,7 +104,7 @@ rules:
   - RULE-SET,Tracking,REJECT
   - RULE-SET,Advertising,REJECT
   - RULE-SET,AD,REJECT
-
+  - AND,((DST-PORT,443),(NETWORK,UDP)),REJECT  # 阻止 QUIC
   # 域名规则
   - RULE-SET,zhi,直接连接
   - RULE-SET,proxylite,国外流量
@@ -177,6 +179,7 @@ rule-providers:
   Facebook:       {<<: *BehaviorDN, url: https://git.imee.me/https://github.com/666OS/rules/raw/release/mihomo/domain/Facebook.mrs}
   Proxy:          {<<: *BehaviorDN, url: https://git.imee.me/https://github.com/666OS/rules/raw/release/mihomo/domain/Proxy.mrs}
   China:          {<<: *BehaviorDN, url: https://git.imee.me/https://github.com/666OS/rules/raw/release/mihomo/domain/China.mrs}
+
   # IP规则
   AdvertisingIP:  {<<: *BehaviorIP, url: https://git.imee.me/https://github.com/666OS/rules/raw/release/mihomo/ip/Advertising.mrs}
   PrivateIP:      {<<: *BehaviorIP, url: https://git.imee.me/https://github.com/666OS/rules/raw/release/mihomo/ip/Private.mrs}
