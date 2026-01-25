@@ -76,6 +76,7 @@ skip-auth-prefixes:
   - 192.168.31.0/24
   - 192.168.100.0/24
   - 127.0.0.1/8
+  - 10.10.1.0/8
 
 # 实验性功能
 experimental:
@@ -148,11 +149,8 @@ proxy-groups:
   - {name: 一键智能,  <<: *SelectAL, icon: https://github.com/666OS/YYDS/raw/main/mihomo/image/mihomo.png}
   - {name: 网络测试,  <<: *OneSmart, icon: https://github.com/Koolson/Qure/raw/master/IconSet/Color/Speedtest.png, include-all: true}
   - {name: ChatGPT,  <<: *SelectHQ, icon: https://github.com/Koolson/Qure/raw/master/IconSet/Color/AI.png}
-  - {name: 电报消息,  <<: *SelectBW, icon: https://github.com/Koolson/Qure/raw/master/IconSet/Color/Telegram_X.png}
-  - {name: 社交平台,  <<: *SelectLR, icon: https://github.com/Koolson/Qure/raw/master/IconSet/Color/PBS.png} 
-  - {name: 游戏平台,  <<: *SelectLD, icon: https://github.com/Koolson/Qure/raw/master/IconSet/Color/Game.png}
-  - {name: 国际媒体,  <<: *SelectBW, icon: https://github.com/Koolson/Qure/raw/master/IconSet/Color/DomesticMedia.png}
-  - {name: 新闻媒体,  <<: *SelectHQ, icon: https://github.com/Koolson/Qure/raw/master/IconSet/Color/Apple_News.png}
+  - {name: 电报,  <<: *SelectBW, icon: https://github.com/Koolson/Qure/raw/master/IconSet/Color/Telegram_X.png}
+  - {name: YouTube,  <<: *SelectBW, icon: https://github.com/Koolson/Qure/raw/master/IconSet/Color/DomesticMedia.png}
   - {name: 谷歌服务,  <<: *SelectHQ, icon: https://github.com/Koolson/Qure/raw/master/IconSet/Color/Google_Search.png}
   - {name: 脸书服务,  <<: *SelectHQ, icon: https://github.com/Koolson/Qure/raw/master/IconSet/Color/Facebook.png}
   - {name: 国外流量,  <<: *SelectHQ, icon: https://github.com/Koolson/Qure/raw/master/IconSet/Color/Global.png}
@@ -194,18 +192,19 @@ rules:
   - RULE-SET,XPTV,直接连接
   - RULE-SET,AppleCN,直接连接
   - RULE-SET,AI,ChatGPT
+  - RULE-SET,YouTube,YouTube
   - DOMAIN-KEYWORD,speedtest,网络测试
   - RULE-SET,Speedtest,网络测试
-  - RULE-SET,Telegram,电报消息
-  - RULE-SET,SocialMedia,社交平台
-  - RULE-SET,NewsMedia,新闻媒体
-  - RULE-SET,Games,游戏平台
+  - RULE-SET,Telegram,电报
+  - RULE-SET,SocialMedia,国外流量
+  - RULE-SET,NewsMedia,国外流量
+  - RULE-SET,Games,国外流量
   - RULE-SET,Crypto,国外流量
   - RULE-SET,Emby,国外流量
-  - RULE-SET,Streaming,国际媒体
+  - RULE-SET,Streaming,国外流量
   - RULE-SET,Apple,直接连接 
   - RULE-SET,Google,谷歌服务
-  - RULE-SET,Microsoft,直接连接 
+  - RULE-SET,Microsoft,直接连接
   - RULE-SET,Facebook,脸书服务
   - RULE-SET,Proxy,国外流量
   - RULE-SET,China,国内流量
@@ -215,10 +214,10 @@ rules:
   - RULE-SET,PrivateIP,直接连接,no-resolve
   - RULE-SET,XPTVIP,直接连接,no-resolve
   - RULE-SET,AIIP,ChatGPT,no-resolve
-  - RULE-SET,TelegramIP,电报消息,no-resolve
-  - RULE-SET,SocialMediaIP,社交平台,no-resolve
+  - RULE-SET,TelegramIP,电报,no-resolve
+  - RULE-SET,SocialMediaIP,国外流量,no-resolve
   - RULE-SET,EmbyIP,国外流量,no-resolve
-  - RULE-SET,StreamingIP,国际媒体,no-resolve
+  - RULE-SET,StreamingIP,国外流量,no-resolve
   - RULE-SET,GoogleIP,谷歌服务,no-resolve
   - RULE-SET,FacebookIP,脸书服务,no-resolve
   - RULE-SET,ProxyIP,国外流量,no-resolve
@@ -255,6 +254,7 @@ rule-providers:
   AppleCN:        {<<: *BehaviorDN, url: https://github.com/666OS/rules/raw/release/mihomo/domain/AppleCN.mrs}
   Apple:          {<<: *BehaviorDN, url: https://github.com/666OS/rules/raw/release/mihomo/domain/Apple.mrs}
   Google:         {<<: *BehaviorDN, url: https://github.com/666OS/rules/raw/release/mihomo/domain/Google.mrs}
+  YouTube:        {<<: *BehaviorDN, url: https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/youtube.mrs}
   Microsoft:      {<<: *BehaviorDN, url: https://github.com/666OS/rules/raw/release/mihomo/domain/Microsoft.mrs}  
   Facebook:       {<<: *BehaviorDN, url: https://github.com/666OS/rules/raw/release/mihomo/domain/Facebook.mrs}
   Proxy:          {<<: *BehaviorDN, url: https://github.com/666OS/rules/raw/release/mihomo/domain/Proxy.mrs}
