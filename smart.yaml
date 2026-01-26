@@ -151,6 +151,7 @@ proxy-groups:
   - {name: ChatGPT,  <<: *SelectHQ, icon: https://github.com/Koolson/Qure/raw/master/IconSet/Color/AI.png}
   - {name: 电报,  <<: *SelectBW, icon: https://github.com/Koolson/Qure/raw/master/IconSet/Color/Telegram_X.png}
   - {name: YouTube,  <<: *SelectBW, icon: https://github.com/Koolson/Qure/raw/master/IconSet/Color/DomesticMedia.png}
+  - {name: 微软服务,  <<: *SelectHQ, icon: https://github.com/Koolson/Qure/raw/master/IconSet/Color/Microsoft.png}
   - {name: 谷歌服务,  <<: *SelectHQ, icon: https://github.com/Koolson/Qure/raw/master/IconSet/Color/Google_Search.png}
   - {name: 脸书服务,  <<: *SelectHQ, icon: https://github.com/Koolson/Qure/raw/master/IconSet/Color/Facebook.png}
   - {name: 国外流量,  <<: *SelectHQ, icon: https://github.com/Koolson/Qure/raw/master/IconSet/Color/Global.png}
@@ -204,7 +205,7 @@ rules:
   - RULE-SET,Streaming,国外流量
   - RULE-SET,Apple,直接连接 
   - RULE-SET,Google,谷歌服务
-  - RULE-SET,Microsoft,直接连接
+  - RULE-SET,Microsoft,微软服务
   - RULE-SET,Facebook,脸书服务
   - RULE-SET,Proxy,国外流量
   - RULE-SET,China,国内流量
