@@ -29,7 +29,7 @@ SelectLR: &SelectLR {type: select, proxies: [低倍率线路, 高质量线路, �
 # ==================== 代理提供者 ====================
 proxy-providers:
   # 优质订阅源 - 优质节点集合，使用时请修改
-  优质服务商: {<<: *BaseProvider, url: 'https://login.yfjc.xyz/api/v1/client/subscribe?token=ccf79b689bda0660f7ad56f823e6e95e', override: {additional-prefix: '[优] '}}
+  优质服务商: {<<: *BaseProvider, url: '', override: {additional-prefix: '[优] '}}
   # 备用订阅源 - 次优节点集合，使用时请修改
   备用服务商: {<<: *BaseProvider, url: '', override: {additional-prefix: '[备] '}}
 
