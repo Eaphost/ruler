@@ -348,6 +348,7 @@ proxy-groups:
   filter: (?i)美|us|usa|america|united states
   icon: https://github.com/Koolson/Qure/raw/master/IconSet/Color/Round_Robin_1.png
 rules:
+- IP-CIDR,129.153.208.47/32,DIRECT,no-resolve
 - DOMAIN-SUFFIX,lanren.work,DIRECT
 - DOMAIN-SUFFIX,whfwdh.com,DIRECT
 - DOMAIN-SUFFIX,nas.654183440.xyz,DIRECT
